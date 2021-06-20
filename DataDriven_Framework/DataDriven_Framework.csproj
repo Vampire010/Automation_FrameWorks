@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="SpecRun.SpecFlow" Version="3.8.12" />
+    <PackageReference Include="SpecFlow" Version="3.8.14" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="91.0.4472.10100" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common_Lib\" />
+    <None Remove="Feature_Files\" />
+    <None Remove="Step_Def\" />
+    <None Remove="Test_Runner\" />
+    <None Remove="Import_Data\" />
+    <None Remove="Data_Source\" />
+    <None Remove="ExcelDataReader.DataSet" />
+    <None Remove="ExcelDataReader" />
+    <None Remove="SpecRun.SpecFlow" />
+    <None Remove="SpecFlow" />
+    <None Remove="Selenium.WebDriver.ChromeDriver" />
+    <None Remove="Selenium.Support" />
+    <None Remove="Selenium.WebDriver" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common_Lib\" />
+    <Folder Include="Feature_Files\" />
+    <Folder Include="Step_Def\" />
+    <Folder Include="Test_Runner\" />
+    <Folder Include="Import_Data\" />
+    <Folder Include="Data_Source\" />
+  </ItemGroup>
+</Project>
